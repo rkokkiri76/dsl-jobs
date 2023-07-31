@@ -1,11 +1,11 @@
-job ('Jenkins-scripted'){
+pipelineJob ('Jenkins-scripted'){
 
       description ('writing Jenkins job using Jenkinfile scripted')
 
     parameters {
         stringParam('name', 'rajesh', 'enter value')
     }
-
+    
      scm {
            git ('https://github.com/rkokkiri76/dsl-jobs.git', 'main')
      }

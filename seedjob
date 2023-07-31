@@ -1,4 +1,10 @@
 job ('Jenkins-scripted'){
 
       description ('writing Jenkins job using Jenkinfile scripted')
+
+    parameters {
+        stringParam('name', 'rajesh' 'enter value')
+    }
+
+
 }

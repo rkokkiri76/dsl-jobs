@@ -6,5 +6,7 @@ job ('Jenkins-scripted'){
         stringParam('name', 'rajesh' 'enter value')
     }
 
-
+     scm {
+           git ('https://github.com/rkokkiri76/dsl-jobs.git', 'main')
+     }
 }

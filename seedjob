@@ -24,3 +24,4 @@ def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git'
       } 
     } 
   }
+}

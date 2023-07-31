@@ -1,0 +1,4 @@
+job ('Jenkins-sripted'){
+
+      description ('writing jenkins job using jenkinfile scripted')
+}

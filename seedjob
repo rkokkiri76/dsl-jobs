@@ -6,7 +6,7 @@ pipelineJob ('Jenkins-scripted'){
 def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git' 
   //def sshRepo = 'git@github.com:rkokkiri76/dsl-jobs.git' 
 
-  description("Scripted Jenkinsfile job") 
+  description("Scripted Jenkinsfile job created from seed job dsl-jobs") 
  // keepDependencies(false) 
     parameters {
         stringParam('name', 'rajesh', 'enter value')

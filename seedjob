@@ -1,12 +1,26 @@
 pipelineJob ('Jenkins-scripted'){
 
-      description ('writing Jenkins job using Jenkinfile scripted')
+def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git' 
+  //def sshRepo = 'git@github.com:rkokkiri76/dsl-jobs.git' 
 
-    parameters {
-        stringParam('name', 'rajesh', 'enter value')
-    }
-    
-     scm {
-           git ('https://github.com/rkokkiri76/dsl-jobs.git', 'main')
-     }
-}
+  description("Scripted Jenkinsfile job") 
+ // keepDependencies(false) 
+
+  properties{ 
+
+    githubProjectUrl (repo) 
+   } 
+
+  definition { 
+
+    cpsScm { 
+      scm { 
+        git { 
+          remote { url(repo) } 
+          branches('main') 
+          scriptPath('Jenkinsfile') 
+          extensions { }  // required as otherwise it may try to tag the repo, which you may not want 
+        } 
+      } 
+    } 
+  }

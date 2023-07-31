@@ -1,14 +1,14 @@
 pipelineJob ('Jenkins-scripted'){
 
 
-stringParam(String 'name', String 'rajesh', String 'enter value')
+
 
 def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git' 
   //def sshRepo = 'git@github.com:rkokkiri76/dsl-jobs.git' 
 
   description("Scripted Jenkinsfile job") 
  // keepDependencies(false) 
-
+   stringParam('name', 'rajesh', 'enter value')
   properties{ 
 
     githubProjectUrl (repo) 

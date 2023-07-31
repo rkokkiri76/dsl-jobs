@@ -8,7 +8,9 @@ def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git'
 
   description("Scripted Jenkinsfile job") 
  // keepDependencies(false) 
-   stringParam('name', 'rajesh', 'enter value')
+    parameters {
+        stringParam('name', 'rajesh', 'enter value')
+    }
   properties{ 
 
     githubProjectUrl (repo) 

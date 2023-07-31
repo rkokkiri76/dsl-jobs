@@ -11,10 +11,10 @@ def repo = 'https://github.com/rkokkiri76/jenkinsscripted.git'
     parameters {
         stringParam('name', 'rajesh', 'enter value')
     }
-  properties{ 
+  //properties{ 
 
-    githubProjectUrl (repo) 
-   } 
+   // githubProjectUrl (repo) 
+ //  } 
 
   definition { 
 

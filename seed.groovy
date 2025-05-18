@@ -5,12 +5,12 @@ pipelineJob('sample-pipeline') {
       scm {
         git {
           remote {
-            url('https://github.com/RoadieHQ/sample-service.git')
+            url('https://github.com/rkokkiri76/dsl-jobs.git')
           }
           branch('main')
         }
       }
-      scriptPath('dummy-Jenkinsfile')
+      scriptPath('jenkinsfile')
     }
   }
 }
